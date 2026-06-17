@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { SCREENSHOTS } from "../data/evidence";
+import { ExternalLink } from "lucide-react";
+import { SCREENSHOTS, PRESS } from "../data/evidence";
 
 const Overline = ({ children }) => (
   <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
@@ -122,6 +123,35 @@ export const CaseStudy = () => {
               Views · single post
             </p>
           </motion.div>
+        </div>
+      </div>
+
+      {/* Verifiable press row */}
+      <div data-testid="press-links" className="mt-20">
+        <p className="text-center text-xs font-bold tracking-[0.2em] uppercase text-zinc-500 mb-6">
+          Don’t take our word for it — read the receipts
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          {PRESS.map((p, i) => (
+            <a
+              key={p.url}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid={`press-link-${i}`}
+              className="group rounded-2xl border border-white/10 bg-[#0a0a0a] p-6 hover:border-[#facc15]/50 hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#facc15]">
+                  {p.source}
+                </span>
+                <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:text-white transition-colors" />
+              </div>
+              <p className="mt-3 font-heading font-semibold leading-snug">
+                {p.title}
+              </p>
+            </a>
+          ))}
         </div>
       </div>
     </section>

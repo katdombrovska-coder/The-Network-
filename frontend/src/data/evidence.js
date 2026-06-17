@@ -43,6 +43,33 @@ export const FILTERS = [
   "Ecosystem",
 ];
 
+export const LINKS = {
+  coinEdition:
+    "https://coinedition.com/94-becomes-portugals-first-nft-based-specialty-coffee-membership/",
+  walletConnectBlog:
+    "https://walletconnect.com/blog/how-94-coffee-uses-walletconnect-pay-to-settle-transactions",
+  ninetyFour: "https://ninetyfourdegrees.com/",
+};
+
+// Press placements — shown as a clickable row in the case study.
+export const PRESS = [
+  {
+    source: "CoinEdition",
+    title: "94° Becomes Portugal’s First NFT-Based Specialty Coffee Membership",
+    url: LINKS.coinEdition,
+  },
+  {
+    source: "WalletConnect Blog",
+    title: "How 94° Coffee Uses WalletConnect Pay to Settle Transactions",
+    url: LINKS.walletConnectBlog,
+  },
+  {
+    source: "94° Coffee",
+    title: "ninetyfourdegrees.com — the partner brand",
+    url: LINKS.ninetyFour,
+  },
+];
+
 // Masonry proof wall — mix of real screenshots, real quotes & on-chain receipts.
 export const PROOF = [
   {
@@ -52,6 +79,8 @@ export const PROOF = [
     src: SCREENSHOTS.acceptCrypto,
     title: "“It’s time to accept crypto.”",
     meta: "WalletConnect · X · 198.6K views · 8.6K likes",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "Read the WalletConnect story",
   },
   {
     id: "p2",
@@ -61,6 +90,8 @@ export const PROOF = [
       "Crypto payments allow for faster settlement and fewer intermediaries. It just makes sense, especially for a business like ours that values efficiency and modern tools.",
     author: "Illia Akulov",
     role: "Founder, 94° Coffee · via WalletConnect Blog",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "WalletConnect Blog",
   },
   {
     id: "p3",
@@ -69,6 +100,8 @@ export const PROOF = [
     src: SCREENSHOTS.barista,
     title: "X Article: How 94° Coffee Uses WalletConnect Pay",
     meta: "WalletConnect · X Article · 83K views · 207 likes",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "Read the article",
   },
   {
     id: "p4",
@@ -77,6 +110,8 @@ export const PROOF = [
     src: SCREENSHOTS.solana,
     title: "Reposted by Solana — “A coffee, paid onchain in seconds.”",
     meta: "Solana · X · 97K views · 1.2K likes",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "Read the WalletConnect story",
   },
   {
     id: "p5",
@@ -86,6 +121,8 @@ export const PROOF = [
       "The introduction of 94° NFT Memberships is a logical next step for a brand that’s already at the heart of Lisbon’s Web3 movement.",
     author: "Ahmed Refaie",
     role: "Founder, Dsrptd.net (Dubai) · via CoinEdition",
+    url: LINKS.coinEdition,
+    sourceLabel: "Read on CoinEdition",
   },
   {
     id: "p6",
@@ -94,6 +131,8 @@ export const PROOF = [
     src: SCREENSHOTS.receipt,
     title: "Settled on-chain — ETH receipt, Ethereum network",
     meta: "WalletConnect Pay · Real transaction receipt",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "Read the WalletConnect story",
   },
   {
     id: "p7",
@@ -102,6 +141,8 @@ export const PROOF = [
     src: SCREENSHOTS.liveLisbon,
     title: "“WalletConnect Pay is now LIVE at 94° Coffee in Lisbon”",
     meta: "Pay with USDC, ETH, SOL, BNB, MON or POL · 25K views",
+    url: LINKS.ninetyFour,
+    sourceLabel: "Visit 94° Coffee",
   },
   {
     id: "p8",
@@ -111,6 +152,8 @@ export const PROOF = [
       "Being first in Lisbon’s Web3 culture means being first in coffee too. 94° was built to be a hub where innovation and community meet.",
     author: "Taras Tunskyy",
     role: "Co-founder, 94° Coffee · via CoinEdition",
+    url: LINKS.coinEdition,
+    sourceLabel: "Read on CoinEdition",
   },
   {
     id: "p9",
@@ -119,6 +162,8 @@ export const PROOF = [
     stat: "1st",
     label: "Physical merchant partner ever onboarded to WalletConnect Pay",
     meta: "WalletConnect Blog · Official announcement",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "Read the announcement",
   },
 ];
 
