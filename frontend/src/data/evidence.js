@@ -1,0 +1,204 @@
+// Real evidence pulled from the WalletConnect x 94 Coffee collaboration.
+// Sources: WalletConnect X posts, Solana repost, CoinEdition PR, WalletConnect blog.
+
+export const SCREENSHOTS = {
+  acceptCrypto:
+    "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/8vv40dmu_photo_2026-06-17%2017.05.28.jpeg",
+  barista:
+    "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/am6tb1g8_photo_2026-06-17%2017.05.39.jpeg",
+  liveLisbon:
+    "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/zejg71tr_photo_2026-06-17%2017.05.41.jpeg",
+  receipt:
+    "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/irrj8cep_photo_2026-06-17%2017.05.43.jpeg",
+  solana:
+    "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/h3ds6oth_photo_2026-06-17%2017.05.47.jpeg",
+};
+
+export const TEXTURES = {
+  hero: "https://images.unsplash.com/photo-1693648793394-0b76b7eb042e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjBsdXh1cnklMjB0ZXh0dXJlfGVufDB8fHx8MTc4MTYyMDQ5Mnww&ixlib=rb-4.1.0&q=85",
+  satin: "https://images.pexels.com/photos/21926654/pexels-photo-21926654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  coffeeShop: "https://images.unsplash.com/photo-1542181961-9590d0c79dab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBzcGVjaWFsdHklMjBjb2ZmZWUlMjBzaG9wJTIwZGFya3xlbnwwfHx8fDE3ODE3MTU2NzJ8MA&ixlib=rb-4.1.0&q=85",
+};
+
+export const PARTNERS = [
+  "WalletConnect",
+  "Solana",
+  "94° Coffee",
+  "CoinEdition",
+  "SBC Summit Lisbon",
+  "MetaMask",
+  "Ethereum",
+  "Arbitrum",
+  "Optimism",
+  "BNB Chain",
+  "Web3 District",
+];
+
+export const FILTERS = [
+  "All",
+  "Screenshot",
+  "Press",
+  "On-Chain",
+  "Testimonial",
+  "Ecosystem",
+];
+
+// Masonry proof wall — mix of real screenshots, real quotes & on-chain receipts.
+export const PROOF = [
+  {
+    id: "p1",
+    type: "image",
+    category: "Screenshot",
+    src: SCREENSHOTS.acceptCrypto,
+    title: "“It’s time to accept crypto.”",
+    meta: "WalletConnect · X · 198.6K views · 8.6K likes",
+  },
+  {
+    id: "p2",
+    type: "quote",
+    category: "Testimonial",
+    quote:
+      "Crypto payments allow for faster settlement and fewer intermediaries. It just makes sense, especially for a business like ours that values efficiency and modern tools.",
+    author: "Illia Akulov",
+    role: "Founder, 94° Coffee · via WalletConnect Blog",
+  },
+  {
+    id: "p3",
+    type: "image",
+    category: "Press",
+    src: SCREENSHOTS.barista,
+    title: "X Article: How 94° Coffee Uses WalletConnect Pay",
+    meta: "WalletConnect · X Article · 83K views · 207 likes",
+  },
+  {
+    id: "p4",
+    type: "image",
+    category: "Ecosystem",
+    src: SCREENSHOTS.solana,
+    title: "Reposted by Solana — “A coffee, paid onchain in seconds.”",
+    meta: "Solana · X · 97K views · 1.2K likes",
+  },
+  {
+    id: "p5",
+    type: "quote",
+    category: "Press",
+    quote:
+      "The introduction of 94° NFT Memberships is a logical next step for a brand that’s already at the heart of Lisbon’s Web3 movement.",
+    author: "Ahmed Refaie",
+    role: "Founder, Dsrptd.net (Dubai) · via CoinEdition",
+  },
+  {
+    id: "p6",
+    type: "image",
+    category: "On-Chain",
+    src: SCREENSHOTS.receipt,
+    title: "Settled on-chain — ETH receipt, Ethereum network",
+    meta: "WalletConnect Pay · Real transaction receipt",
+  },
+  {
+    id: "p7",
+    type: "image",
+    category: "Screenshot",
+    src: SCREENSHOTS.liveLisbon,
+    title: "“WalletConnect Pay is now LIVE at 94° Coffee in Lisbon”",
+    meta: "Pay with USDC, ETH, SOL, BNB, MON or POL · 25K views",
+  },
+  {
+    id: "p8",
+    type: "quote",
+    category: "Testimonial",
+    quote:
+      "Being first in Lisbon’s Web3 culture means being first in coffee too. 94° was built to be a hub where innovation and community meet.",
+    author: "Taras Tunskyy",
+    role: "Co-founder, 94° Coffee · via CoinEdition",
+  },
+  {
+    id: "p9",
+    type: "stat",
+    category: "Ecosystem",
+    stat: "1st",
+    label: "Physical merchant partner ever onboarded to WalletConnect Pay",
+    meta: "WalletConnect Blog · Official announcement",
+  },
+];
+
+export const VALUE = [
+  {
+    k: "Brand Exposure",
+    v: "500K+",
+    sub: "Combined impressions across WalletConnect & Solana posts featuring the partner.",
+    span: "lg:col-span-2",
+  },
+  {
+    k: "Ecosystem Reach",
+    v: "5",
+    sub: "Networks live in one launch: Ethereum, Arbitrum, Optimism, BNB Chain, Solana.",
+    span: "",
+  },
+  {
+    k: "Industry First",
+    v: "#1",
+    sub: "First-ever physical merchant for WalletConnect Pay — globally.",
+    span: "",
+  },
+  {
+    k: "Media Coverage",
+    v: "3+",
+    sub: "PR placements incl. CoinEdition, WalletConnect Blog & X Article feature.",
+    span: "",
+  },
+  {
+    k: "Conference Access",
+    v: "SBC",
+    sub: "Activated during SBC Summit Lisbon — placed in front of global founders & investors.",
+    span: "lg:col-span-2",
+  },
+];
+
+export const PROCESS = [
+  {
+    n: "01",
+    t: "Identify Opportunity",
+    d: "We spot the right moment, the right window, and the right counterpart inside a high-growth ecosystem.",
+  },
+  {
+    n: "02",
+    t: "Strategic Introduction",
+    d: "We make the introduction that wouldn’t happen on its own — directly to decision-makers.",
+  },
+  {
+    n: "03",
+    t: "Partnership Development",
+    d: "We shape the collaboration into something real: terms, scope, and a launch both sides want.",
+  },
+  {
+    n: "04",
+    t: "Community Activation",
+    d: "We turn the partnership into momentum — events, communities, and on-the-ground presence.",
+  },
+  {
+    n: "05",
+    t: "Visibility & Exposure",
+    d: "We amplify it across media networks and ecosystem channels until the market notices.",
+  },
+  {
+    n: "06",
+    t: "Long-Term Ecosystem Value",
+    d: "We position you permanently inside the ecosystem — so the next opportunity finds you.",
+  },
+];
+
+export const AUDIENCE = [
+  "Cafés & Restaurants",
+  "Hotels & Hospitality",
+  "Coworking Spaces",
+  "Event Venues",
+  "Lifestyle Brands",
+  "Startups",
+  "AI Companies",
+  "Web3 Protocols",
+  "Accelerators",
+  "Venture Funds",
+  "Conferences",
+  "Communities",
+];

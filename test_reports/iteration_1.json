@@ -1,0 +1,53 @@
+{
+  "summary": "Full backend + frontend e2e testing of the Ecosystem Partnership Program landing page. All backend APIs working (6/6 pytest pass). Frontend sections all render. Proof filters, lightbox, and Apply form all work end-to-end with backend persistence verified.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {
+        "screen": "Proof of Execution section",
+        "issues": [
+          "The category filter button bar can be hidden behind the sticky nav when users land directly on #proof anchor (filter button bbox y=19, sticky nav is ~64-80px tall). Consider adding scroll-margin-top to the filters container or to #proof so anchor scroll/scrollIntoView lands below the fixed header."
+        ]
+      },
+      {
+        "screen": "Proof lightbox (DialogContent)",
+        "issues": [
+          "Radix Dialog console warning: 'Missing Description or aria-describedby for DialogContent'. Add a DialogDescription (sr-only is fine) for accessibility."
+        ]
+      }
+    ]
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_applications.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [
+    "Optional: add scroll-margin-top (e.g. scroll-mt-24) to #proof / #case-study / #apply anchored sections so the fixed nav doesn't cover content when users jump to anchors.",
+    "Optional: add a hidden DialogDescription inside the proof lightbox to silence the Radix a11y warning."
+  ],
+  "critical_code_review_comments": [
+    "server.py uses deprecated @app.on_event('shutdown'); prefer FastAPI lifespan context manager.",
+    "PartnershipApplication stores created_at as ISO string in Mongo but pydantic model declares datetime; conversion is handled on read which is fine, but could be standardized using BSON datetime.",
+    "ApplyForm catches all errors with a generic toast; consider surfacing validation errors from the 422 response so users know which field is wrong.",
+    "CORS allow_origins defaults to '*' with allow_credentials=True; in production this combination is rejected by browsers — make CORS_ORIGINS explicit for production deploys.",
+    "No rate limiting on POST /api/applications — public form is open to spam/abuse."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_applications.py (new)"
+  ],
+  "success_rate": {
+    "backend": "100% (6/6 pytest)",
+    "frontend": "100% on tested flows (sections render, filters, lightbox, form validation, form submit + persistence, hero/nav anchor navigation)"
+  },
+  "test_credentials": "N/A (no auth)",
+  "seed_data_creation": "3 TEST_ prefixed applications created in MongoDB applications collection (TEST_Alice Doe, TEST_Minimal, TEST_E2E User). Safe to delete.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Backend test file: /app/backend/tests/test_applications.py. Public URL: https://opportunity-engine-24.preview.emergentagent.com. No auth. The proof filter buttons can appear covered by the sticky nav if you call scroll_into_view_if_needed() right at the section — scroll the filter button itself into the viewport center via JS (element.scrollIntoView({block:'center'})) before clicking, otherwise force=True clicks may not register on the underlying button.",
+  "rca of the issue": "No functional bugs. Initial belief that proof filters were broken was a testing artifact: scroll_into_view_if_needed placed the filter buttons at y=19, behind the fixed nav header (z-50). Playwright clicks with force=True still respect the actual top element under coordinates and hit the nav instead of the button. After scrolling each filter button to the viewport center, normal clicks worked and filters correctly returned the expected subset (Screenshot->p1,p7; On-Chain->p6; Testimonial->p2,p8). Recommended UX fix: add scroll-mt utility to anchored sections."
+}
