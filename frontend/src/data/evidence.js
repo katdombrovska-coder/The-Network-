@@ -36,6 +36,7 @@ export const PARTNERS = [
 
 export const FILTERS = [
   "All",
+  "Broadcast",
   "Screenshot",
   "Press",
   "On-Chain",
@@ -49,10 +50,18 @@ export const LINKS = {
   walletConnectBlog:
     "https://walletconnect.com/blog/how-94-coffee-uses-walletconnect-pay-to-settle-transactions",
   ninetyFour: "https://ninetyfourdegrees.com/",
+  schwabNYSE: "https://x.com/SchwabNetwork/status/2011104443245208061",
+  ninetyFourReply: "https://x.com/ninetyfourdgrs/status/2011115593957585269",
 };
 
 // Press placements — shown as a clickable external-verification row in the case study.
 export const PRESS = [
+  {
+    source: "Schwab Network",
+    outcome: "National TV — NYSE",
+    title: "94° × WalletConnect featured live from the New York Stock Exchange",
+    url: LINKS.schwabNYSE,
+  },
   {
     source: "CoinEdition",
     outcome: "Media Coverage",
@@ -75,6 +84,17 @@ export const PRESS = [
 
 // Masonry proof wall — mix of real screenshots, real quotes & on-chain receipts.
 export const PROOF = [
+  {
+    id: "p0",
+    type: "broadcast",
+    category: "Broadcast",
+    network: "Schwab Network · live from the NYSE",
+    headline: "94° × WalletConnect, on national financial television.",
+    body: "WalletConnect CEO Jess Houlgrave joined Schwab Network — broadcast from the New York Stock Exchange — to discuss mainstream stablecoin payments at physical checkout. 94° Coffee replied on the broadcast: “Guess the coffee shop ;) 94° x WalletConnect.”",
+    meta: "Schwab Network · X · Jan 13, 2026",
+    url: LINKS.schwabNYSE,
+    sourceLabel: "Watch on Schwab Network",
+  },
   {
     id: "p1",
     type: "image",
@@ -191,8 +211,14 @@ export const VALUE = [
   },
   {
     k: "Media Coverage",
-    v: "3+",
-    sub: "PR placements incl. CoinEdition, WalletConnect Blog & X Article feature.",
+    v: "4+",
+    sub: "Placements incl. Schwab Network (NYSE), CoinEdition, WalletConnect Blog & X Article.",
+    span: "",
+  },
+  {
+    k: "National TV — NYSE",
+    v: "NYSE",
+    sub: "Featured on Schwab Network, broadcast from the New York Stock Exchange floor.",
     span: "",
   },
   {

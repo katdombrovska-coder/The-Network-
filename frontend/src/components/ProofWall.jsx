@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Maximize2, Quote, ExternalLink } from "lucide-react";
+import { Maximize2, Quote, ExternalLink, Tv } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -55,6 +55,28 @@ const ImageCard = ({ item, onOpen }) => (
       <p className="mt-1 text-[11px] text-zinc-400">{item.meta}</p>
       {item.url && <SourceLink item={item} className="mt-2" />}
     </div>
+  </div>
+);
+
+const BroadcastCard = ({ item }) => (
+  <div
+    data-testid={`proof-card-${item.id}`}
+    className="break-inside-avoid mb-6 rounded-xl border border-white/15 bg-gradient-to-br from-[#101010] to-[#0a0a0a] p-7 hover:border-[#facc15]/60 transition-all duration-300"
+  >
+    <div className="flex items-center justify-between mb-4">
+      <span className="inline-flex items-center gap-2 rounded-full bg-[#facc15]/15 border border-[#facc15]/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#facc15]">
+        <Tv className="w-3 h-3" /> On Air
+      </span>
+      <CategoryTag>{item.category}</CategoryTag>
+    </div>
+    <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-500">
+      {item.network}
+    </p>
+    <h4 className="mt-2 font-heading text-xl font-bold leading-snug">
+      {item.headline}
+    </h4>
+    <p className="mt-3 text-sm text-zinc-400 leading-relaxed">{item.body}</p>
+    {item.url && <SourceLink item={item} className="mt-4" />}
   </div>
 );
 
@@ -143,6 +165,8 @@ export const ProofWall = () => {
         {items.map((item) => {
           if (item.type === "image")
             return <ImageCard key={item.id} item={item} onOpen={setActive} />;
+          if (item.type === "broadcast")
+            return <BroadcastCard key={item.id} item={item} />;
           if (item.type === "quote")
             return <QuoteCard key={item.id} item={item} />;
           return <StatCard key={item.id} item={item} />;

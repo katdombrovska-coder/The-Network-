@@ -138,7 +138,7 @@ export const CaseStudy = () => {
           Every claim below is supported by public sources, screenshots,
           messages, and partnership evidence.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {PRESS.map((p, i) => (
             <a
               key={p.url}
