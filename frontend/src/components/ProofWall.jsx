@@ -22,7 +22,7 @@ const SourceLink = ({ item, className = "" }) => (
     rel="noopener noreferrer"
     onClick={(e) => e.stopPropagation()}
     data-testid={`proof-source-${item.id}`}
-    className={`inline-flex items-center gap-1.5 text-[11px] font-semibold text-[#facc15] hover:text-white transition-colors ${className}`}
+    className={`inline-flex items-center gap-1.5 text-[11px] font-semibold text-[#ed0584] hover:text-white transition-colors ${className}`}
   >
     {item.sourceLabel}
     <ExternalLink className="w-3 h-3" />
@@ -61,10 +61,10 @@ const ImageCard = ({ item, onOpen }) => (
 const BroadcastCard = ({ item }) => (
   <div
     data-testid={`proof-card-${item.id}`}
-    className="break-inside-avoid mb-6 rounded-xl border border-white/15 bg-gradient-to-br from-[#101010] to-[#0a0a0a] p-7 hover:border-[#facc15]/60 transition-all duration-300"
+    className="break-inside-avoid mb-6 rounded-xl border border-white/15 bg-gradient-to-br from-[#101010] to-[#0a0a0a] p-7 hover:border-[#ed0584]/60 transition-all duration-300"
   >
     <div className="flex items-center justify-between mb-4">
-      <span className="inline-flex items-center gap-2 rounded-full bg-[#facc15]/15 border border-[#facc15]/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#facc15]">
+      <span className="inline-flex items-center gap-2 rounded-full bg-[#ed0584]/15 border border-[#ed0584]/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#ed0584]">
         <Tv className="w-3 h-3" /> On Air
       </span>
       <CategoryTag>{item.category}</CategoryTag>
@@ -86,7 +86,7 @@ const QuoteCard = ({ item }) => (
     className="break-inside-avoid mb-6 rounded-xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-7 hover:border-white/30 transition-all duration-300"
   >
     <div className="flex items-center justify-between mb-4">
-      <Quote className="w-6 h-6 text-[#facc15]" />
+      <Quote className="w-6 h-6 text-[#ed0584]" />
       <CategoryTag>{item.category}</CategoryTag>
     </div>
     <p className="font-heading text-lg font-semibold leading-snug text-balance">
@@ -103,10 +103,10 @@ const QuoteCard = ({ item }) => (
 const StatCard = ({ item }) => (
   <div
     data-testid={`proof-card-${item.id}`}
-    className="break-inside-avoid mb-6 rounded-xl border border-[#facc15]/30 bg-[#facc15]/[0.06] p-7 hover:border-[#facc15]/60 transition-all duration-300"
+    className="break-inside-avoid mb-6 rounded-xl border border-[#ed0584]/30 bg-[#ed0584]/[0.06] p-7 hover:border-[#ed0584]/60 transition-all duration-300"
   >
     <CategoryTag>{item.category}</CategoryTag>
-    <p className="mt-4 font-mono text-6xl font-bold text-[#facc15]">{item.stat}</p>
+    <p className="mt-4 font-mono text-6xl font-bold text-[#ed0584]">{item.stat}</p>
     <p className="mt-3 font-heading font-bold leading-snug">{item.label}</p>
     <p className="mt-2 text-[11px] text-zinc-500">{item.meta}</p>
     {item.url && <SourceLink item={item} className="mt-3" />}
@@ -127,7 +127,7 @@ export const ProofWall = () => {
       className="scroll-mt-24 py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
     >
       <div className="text-center mb-12">
-        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
+        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#ed0584]">
           Proof of Execution
         </span>
         <h2 className="mt-4 font-heading text-3xl sm:text-5xl font-black tracking-tighter">

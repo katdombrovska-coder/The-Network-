@@ -17,7 +17,7 @@ export const Hero = () => {
           className="w-full h-full object-cover opacity-[0.18]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black" />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] rounded-full bg-[#facc15]/10 blur-[140px]" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] rounded-full bg-[#ed0584]/10 blur-[140px]" />
       </div>
 
       <motion.div
@@ -26,7 +26,7 @@ export const Hero = () => {
         transition={{ duration: 0.6 }}
         className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-zinc-300 mb-8"
       >
-        <span className="w-1.5 h-1.5 rounded-full bg-[#facc15] animate-pulse" />
+        <span className="w-1.5 h-1.5 rounded-full bg-[#ed0584] animate-pulse" />
         Real-World Innovation Partnerships
       </motion.div>
 

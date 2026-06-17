@@ -51,7 +51,7 @@ export const LogoMarquee = () => {
 
       <div className="my-12 flex items-center justify-center gap-4 px-6">
         <span className="h-px w-12 bg-white/10" />
-        <p className="text-center text-xs font-bold tracking-[0.25em] uppercase text-[#facc15]">
+        <p className="text-center text-xs font-bold tracking-[0.25em] uppercase text-[#ed0584]">
           Media Networks
         </p>
         <span className="h-px w-12 bg-white/10" />

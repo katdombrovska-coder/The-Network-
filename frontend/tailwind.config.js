@@ -8,14 +8,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Cabinet Grotesk"', 'sans-serif'],
-        body: ['"Satoshi"', 'sans-serif'],
-        mono: ['"Azeret Mono"', 'monospace'],
+        heading: ['"Silkscreen"', 'monospace'],
+        body: ['"Fira Code"', 'monospace'],
+        mono: ['"Silkscreen"', 'monospace'],
+      },
+      boxShadow: {
+        brutal: '6px 6px 0 0 rgba(0,0,0,0.5)',
+        'brutal-sm': '3px 3px 0 0 rgba(0,0,0,0.5)',
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)'
+        lg: '0',
+        md: '0',
+        sm: '0'
       },
       colors: {
         background: 'hsl(var(--background))',

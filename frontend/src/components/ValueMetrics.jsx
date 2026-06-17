@@ -9,7 +9,7 @@ export const ValueMetrics = () => {
       className="scroll-mt-24 py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
     >
       <div className="mb-14 max-w-2xl">
-        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
+        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#ed0584]">
           Value Created
         </span>
         <h2 className="mt-4 font-heading text-3xl sm:text-5xl font-black tracking-tighter">

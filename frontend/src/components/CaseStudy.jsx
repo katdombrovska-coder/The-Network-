@@ -3,7 +3,7 @@ import { ExternalLink, ShieldCheck } from "lucide-react";
 import { SCREENSHOTS, PRESS } from "../data/evidence";
 
 const Overline = ({ children }) => (
-  <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
+  <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#ed0584]">
     {children}
   </span>
 );
@@ -16,7 +16,7 @@ const Step = ({ tag, title, body }) => (
     transition={{ duration: 0.5 }}
     className="relative pl-6 border-l border-white/10"
   >
-    <span className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#facc15]" />
+    <span className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#ed0584]" />
     <p className="text-xs font-bold tracking-widest uppercase text-zinc-500">
       {tag}
     </p>
@@ -129,8 +129,8 @@ export const CaseStudy = () => {
       {/* Verifiable, external-source press row */}
       <div data-testid="press-links" className="mt-20">
         <div className="flex items-center justify-center gap-2 mb-3">
-          <ShieldCheck className="w-4 h-4 text-[#facc15] shrink-0" />
-          <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
+          <ShieldCheck className="w-4 h-4 text-[#ed0584] shrink-0" />
+          <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#ed0584]">
             External Verification
           </span>
         </div>
@@ -147,11 +147,11 @@ export const CaseStudy = () => {
               rel="noopener noreferrer"
               data-testid={`press-link-${i}`}
               aria-label={`${p.outcome} — ${p.source} (opens in a new tab)`}
-              className="group flex flex-col rounded-2xl border border-white/10 bg-[#0a0a0a] p-6 hover:border-[#facc15]/60 hover:-translate-y-1 transition-all duration-300"
+              className="group flex flex-col rounded-2xl border border-white/10 bg-[#0a0a0a] p-6 hover:border-[#ed0584]/60 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <span className="inline-block rounded-full border border-[#facc15]/30 bg-[#facc15]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#facc15]">
+                  <span className="inline-block rounded-full border border-[#ed0584]/30 bg-[#ed0584]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#ed0584]">
                     {p.outcome}
                   </span>
                   <p className="mt-3 text-sm font-semibold text-white">
@@ -165,7 +165,7 @@ export const CaseStudy = () => {
               <p className="mt-3 font-heading font-semibold leading-snug text-zinc-300 group-hover:text-white transition-colors">
                 {p.title}
               </p>
-              <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-[#facc15]">
+              <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-[#ed0584]">
                 Verify source
                 <ExternalLink className="w-3 h-3" />
               </span>

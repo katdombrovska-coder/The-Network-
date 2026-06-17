@@ -1,14 +1,26 @@
-@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@400,500,700,900&f[]=azeret-mono@400,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --bg-primary: #050505;
-    --bg-secondary: #0a0a0a;
-    --bg-surface: #121212;
-    --accent: #facc15;
+    --bg: #0d0d0f;
+    --bg-raised: #161618;
+    --card: #1c1c20;
+    --cream: #e8dcc8;
+    --cream-dark: #c8b89c;
+    --text-muted: #8c8c9c;
+    --accent: #ed0584;
+    --accent-2: #a0045a;
+    --secondary: #22d3ee;
+    --border: #2a2a30;
+    --border-light: #3a3a44;
+    --font-pixel: "Silkscreen", monospace;
+    --font-code: "Fira Code", monospace;
+    --bw: 3px;
+    --shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.5);
+    --shadow-sm: 3px 3px 0 0 rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -17,55 +29,55 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--bg-primary);
-    color: #ffffff;
-    font-family: "Satoshi", -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg);
+    color: var(--cream);
+    font-family: var(--font-code);
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-    background: var(--accent);
-    color: #050505;
+    background: rgba(237, 5, 132, 0.35);
+    color: var(--cream);
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    height: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #050505;
+    background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
-    background: #262626;
-    border-radius: 8px;
+    background: var(--border);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #3f3f46;
+    background: var(--border-light);
 }
 
 @layer base {
     :root {
-        --background: 0 0% 2%;
-        --foreground: 0 0% 100%;
-        --card: 0 0% 4%;
-        --card-foreground: 0 0% 100%;
-        --popover: 0 0% 4%;
-        --popover-foreground: 0 0% 100%;
-        --primary: 0 0% 100%;
-        --primary-foreground: 0 0% 4%;
-        --secondary: 0 0% 9%;
-        --secondary-foreground: 0 0% 100%;
-        --muted: 0 0% 9%;
-        --muted-foreground: 0 0% 63%;
-        --accent: 48 96% 53%;
-        --accent-foreground: 0 0% 4%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 12%;
-        --input: 0 0% 12%;
-        --ring: 48 96% 53%;
-        --radius: 0.75rem;
+        --background: 240 8% 5%;
+        --foreground: 39 38% 85%;
+        --card: 240 7% 12%;
+        --card-foreground: 39 38% 85%;
+        --popover: 240 5% 9%;
+        --popover-foreground: 39 38% 85%;
+        --primary: 326 96% 47%;
+        --primary-foreground: 39 38% 88%;
+        --secondary: 240 6% 14%;
+        --secondary-foreground: 39 38% 85%;
+        --muted: 240 6% 14%;
+        --muted-foreground: 240 9% 58%;
+        --accent: 326 96% 47%;
+        --accent-foreground: 39 38% 88%;
+        --destructive: 0 72% 60%;
+        --destructive-foreground: 39 38% 88%;
+        --border: 240 7% 17%;
+        --input: 240 7% 17%;
+        --ring: 326 96% 47%;
+        --radius: 0rem;
     }
 }
 
@@ -76,26 +88,91 @@ body {
     body {
         @apply bg-background text-foreground;
     }
+    /* Pixel font for headings + UI chrome */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-pixel);
+        letter-spacing: 0 !important;
+        line-height: 1.15 !important;
+        color: var(--cream);
+    }
+    a {
+        color: var(--accent);
+        text-decoration: none;
+    }
 }
 
 @layer utilities {
+    /* Repoint legacy font utilities to the pixel/code system */
     .font-heading {
-        font-family: "Cabinet Grotesk", sans-serif;
+        font-family: var(--font-pixel) !important;
+        letter-spacing: 0 !important;
     }
     .font-body {
-        font-family: "Satoshi", sans-serif;
+        font-family: var(--font-code) !important;
     }
-    .font-mono-azeret {
-        font-family: "Azeret Mono", monospace;
+    .font-mono-azeret,
+    .font-mono {
+        font-family: var(--font-pixel) !important;
     }
     .text-balance {
         text-wrap: balance;
     }
-    .grain {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+    .brutal-shadow {
+        box-shadow: var(--shadow);
+    }
+    .brutal-shadow-sm {
+        box-shadow: var(--shadow-sm);
     }
 }
 
+@layer components {
+    /* Sharp, brutalist corners everywhere */
+    [class*="rounded"] {
+        border-radius: 0 !important;
+    }
+
+    /* Pixel-press buttons */
+    button,
+    .btn {
+        font-family: var(--font-pixel);
+        border: var(--bw) solid var(--border);
+        box-shadow: var(--shadow-sm);
+        transition:
+            transform 0.05s,
+            box-shadow 0.05s,
+            background-color 0.15s,
+            border-color 0.15s;
+    }
+    button:hover,
+    .btn:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: var(--shadow);
+        border-color: var(--accent);
+    }
+    button:active,
+    .btn:active {
+        transform: translate(3px, 3px);
+        box-shadow: none;
+    }
+
+    /* Brutalist inputs */
+    input,
+    textarea,
+    select {
+        font-family: var(--font-code);
+        border: var(--bw) solid var(--border) !important;
+        box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+        border-radius: 0 !important;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none;
+        border-color: var(--accent) !important;
+    }
+}
+
+/* Marquee */
 @keyframes marquee {
     from {
         transform: translateX(0);

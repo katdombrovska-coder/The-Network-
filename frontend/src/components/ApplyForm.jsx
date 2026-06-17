@@ -7,7 +7,7 @@ import { TEXTURES } from "../data/evidence";
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const FIELD =
-  "w-full rounded-xl bg-[#0f0f0f] border border-white/10 px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#facc15]/60 focus:ring-1 focus:ring-[#facc15]/30 transition-colors";
+  "w-full rounded-xl bg-[#0f0f0f] border border-white/10 px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#ed0584]/60 focus:ring-1 focus:ring-[#ed0584]/30 transition-colors";
 
 export const ApplyForm = () => {
   const [form, setForm] = useState({
@@ -53,7 +53,7 @@ export const ApplyForm = () => {
       </div>
 
       <div className="max-w-2xl mx-auto text-center mb-12">
-        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
+        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#ed0584]">
           Apply for Partnership
         </span>
         <h2 className="mt-4 font-heading text-3xl sm:text-5xl font-black tracking-tighter">
@@ -71,7 +71,7 @@ export const ApplyForm = () => {
       >
         {done ? (
           <div data-testid="apply-success" className="text-center py-10">
-            <CheckCircle2 className="w-14 h-14 text-[#facc15] mx-auto" />
+            <CheckCircle2 className="w-14 h-14 text-[#ed0584] mx-auto" />
             <h3 className="mt-5 font-heading text-2xl font-bold">
               Application received.
             </h3>

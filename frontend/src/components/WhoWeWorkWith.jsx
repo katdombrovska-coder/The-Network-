@@ -24,7 +24,7 @@ export const WhoWeWorkWith = () => {
           />
           <div className="absolute inset-0 bg-black/55" />
           <div className="absolute bottom-0 left-0 p-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#facc15]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#ed0584]">
               From local to global
             </p>
             <p className="mt-2 font-heading text-2xl font-bold max-w-xs">
@@ -36,7 +36,7 @@ export const WhoWeWorkWith = () => {
 
         {/* Audience list */}
         <div>
-          <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
+          <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#ed0584]">
             Who We Work With
           </span>
           <h2 className="mt-4 font-heading text-3xl sm:text-4xl font-black tracking-tighter">
@@ -51,7 +51,7 @@ export const WhoWeWorkWith = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.03 }}
                 data-testid={`audience-${i}`}
-                className="rounded-full border border-white/15 bg-white/[0.03] px-4 py-2 text-sm font-medium text-zinc-300 hover:border-[#facc15]/50 hover:text-white transition-colors"
+                className="rounded-full border border-white/15 bg-white/[0.03] px-4 py-2 text-sm font-medium text-zinc-300 hover:border-[#ed0584]/50 hover:text-white transition-colors"
               >
                 {a}
               </motion.span>
