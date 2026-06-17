@@ -21,7 +21,7 @@ export const SCREENSHOTS = {
 export const TEXTURES = {
   hero: "https://images.unsplash.com/photo-1693648793394-0b76b7eb042e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjBsdXh1cnklMjB0ZXh0dXJlfGVufDB8fHx8MTc4MTYyMDQ5Mnww&ixlib=rb-4.1.0&q=85",
   satin: "https://images.pexels.com/photos/21926654/pexels-photo-21926654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  coffeeShop: "https://images.unsplash.com/photo-1542181961-9590d0c79dab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBzcGVjaWFsdHklMjBjb2ZmZWUlMjBzaG9wJTIwZGFya3xlbnwwfHx8fDE3ODE3MTU2NzJ8MA&ixlib=rb-4.1.0&q=85",
+  coffeeShop: "https://customer-assets.emergentagent.com/job_opportunity-engine-24/artifacts/ro6w4w2a_Screenshot%202026-06-17%20at%2020.33.39.png",
 };
 
 export const PARTNERS = [
