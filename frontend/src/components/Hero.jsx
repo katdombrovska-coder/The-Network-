@@ -34,7 +34,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="font-heading font-black tracking-tighter leading-[0.95] text-4xl sm:text-6xl lg:text-7xl max-w-5xl text-balance"
+        className="font-heading font-black tracking-tighter leading-[1.25] text-3xl sm:text-4xl lg:text-5xl max-w-4xl text-balance"
       >
         We Connect Real-World Businesses
         <span className="block bg-gradient-to-r from-white via-white to-zinc-500 bg-clip-text text-transparent">
@@ -46,12 +46,10 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.25 }}
-        className="mt-7 max-w-2xl text-base lg:text-lg text-zinc-400 leading-relaxed font-medium"
+        className="mt-7 max-w-xl text-base lg:text-lg text-zinc-400 leading-relaxed font-medium"
       >
-        From cafés and hotels to restaurants and professional services, we
-        create strategic partnerships that help businesses access new customers,
-        media exposure, and innovation — while giving technology companies a
-        real-world environment to launch, test, and scale their solutions.
+        We create partnerships between businesses and emerging technologies that
+        generate visibility, adoption, and real-world growth.
       </motion.p>
 
       <motion.div
