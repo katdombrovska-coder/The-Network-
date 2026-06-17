@@ -1,0 +1,154 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) + Archetype 5 (Luxury/Premium)",
+  "emotional_tone": "Exclusive, Credible, High-Status, Proven, Action-Oriented",
+  "colors": {
+    "background_primary": "#050505",
+    "background_secondary": "#0A0A0A",
+    "background_surface": "#121212",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "text_muted": "#52525B",
+    "accent": "#FACC15",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_focus": "rgba(255, 255, 255, 0.2)",
+    "glass_bg": "rgba(10, 10, 10, 0.6)",
+    "glass_border": "rgba(255, 255, 255, 0.1)"
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk",
+    "body_font": "Satoshi",
+    "mono_font": "Azeret Mono",
+    "h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter leading-tight",
+    "h2": "text-3xl sm:text-4xl font-bold tracking-tight leading-snug",
+    "h3": "text-2xl sm:text-3xl font-semibold tracking-tight",
+    "body": "text-base lg:text-lg font-medium leading-relaxed",
+    "overline": "text-xs font-bold tracking-[0.2em] uppercase text-zinc-400"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "grid_gap": "gap-6 md:gap-8 lg:gap-12",
+    "bento_spacing": "p-8 md:p-12"
+  },
+  "surface_strategies": {
+    "cards": "bg-[#0A0A0A] border border-white/5 rounded-2xl hover:border-white/20 transition-all duration-300",
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+    "buttons_primary": "bg-white text-black font-semibold rounded-full px-8 py-4 hover:bg-zinc-200 transition-colors",
+    "buttons_secondary": "bg-transparent text-white border border-white/20 font-semibold rounded-full px-8 py-4 hover:bg-white/5 transition-colors"
+  },
+  "components": {
+    "Hero": {
+      "layout": "Min-h-[90vh] flex flex-col justify-center items-center text-center relative overflow-hidden",
+      "visuals": "Subtle radial gradient in background. Large H1. Two CTAs (Apply, View Proof). Include a dark abstract texture in the background with opacity-20.",
+      "testing_id": "hero-section"
+    },
+    "Logo_Marquee": {
+      "layout": "Full width, slow-moving marquee (react-fast-marquee)",
+      "styling": "Logos must be grayscale / low opacity (opacity-50) and turn full color on hover. Huge gap between logos (gap-24).",
+      "testing_id": "partner-logos-marquee"
+    },
+    "Case_Study": {
+      "layout": "grid-cols-1 lg:grid-cols-2 gap-16 items-center",
+      "left_col": "Storytelling text. Use the 'overline' style for 'FLAGSHIP CASE STUDY'. High contrast text.",
+      "right_col": "Overlapping collage of real screenshots. Use framer-motion to slightly tilt and float the images. Wrap screenshots in a subtle glass border so they look like premium physical polaroids or framed digital assets.",
+      "testing_id": "flagship-case-study"
+    },
+    "Proof_Masonry_Wall": {
+      "layout": "columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6",
+      "interaction": "Hover on screenshot card scales up the image slightly, reveals a category tag (e.g., 'Twitter', 'PR', 'On-Chain'). Clicking opens a lightbox (Dialog component).",
+      "card_style": "break-inside-avoid rounded-xl overflow-hidden border border-white/10 group relative",
+      "testing_id": "proof-masonry-grid"
+    },
+    "Value_Metrics": {
+      "layout": "Bento Grid (Control Room Mode). 3 or 4 asymmetric cards.",
+      "content": "Focus on numerical outcomes. Huge numbers (text-5xl font-mono) paired with real evidence context.",
+      "testing_id": "value-metrics-bento"
+    },
+    "Process_Flow": {
+      "layout": "Vertical timeline or 6-column horizontal scroll.",
+      "visuals": "Use the 'Tracing Beam' effect from E1 rules: A thin vertical glowing line connecting the 6 steps.",
+      "testing_id": "process-flow-timeline"
+    },
+    "Who_We_Work_With": {
+      "layout": "Grid of dark, moody lifestyle images (cafes, startups, events) with text overlays.",
+      "styling": "Images must have bg-black/50 overlay to ensure text is perfectly readable. Text aligned bottom-left.",
+      "testing_id": "target-audience-grid"
+    },
+    "Apply_Form": {
+      "layout": "Narrow column (max-w-2xl) centered.",
+      "components": "Shadcn Form, Input, Textarea. Dark mode styling (bg-zinc-900 border-zinc-800). Submit button uses primary button style.",
+      "testing_id": "apply-partnership-form"
+    }
+  },
+  "media": {
+    "real_evidence_screenshots": [
+      {
+        "url": "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/8vv40dmu_photo_2026-06-17%2017.05.28.jpeg",
+        "description": "WalletConnect X post - 198.6K views",
+        "category": "Social Proof",
+        "placement": "Case Study Collage & Masonry Wall"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/am6tb1g8_photo_2026-06-17%2017.05.39.jpeg",
+        "description": "WalletConnect X Article - 94° Coffee barista",
+        "category": "PR",
+        "placement": "Case Study Collage & Masonry Wall"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/zejg71tr_photo_2026-06-17%2017.05.41.jpeg",
+        "description": "WalletConnect Pay now LIVE at 94° Coffee",
+        "category": "Announcement",
+        "placement": "Masonry Wall"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/irrj8cep_photo_2026-06-17%2017.05.43.jpeg",
+        "description": "Payment receipt close-up (ETH transaction)",
+        "category": "On-Chain Evidence",
+        "placement": "Value Metrics or Masonry Wall"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/h3ds6oth_photo_2026-06-17%2017.05.47.jpeg",
+        "description": "Solana X repost - WalletConnect Pay live on Solana",
+        "category": "Ecosystem Reach",
+        "placement": "Case Study Collage & Masonry Wall"
+      }
+    ],
+    "background_textures": [
+      {
+        "url": "https://images.unsplash.com/photo-1693648793394-0b76b7eb042e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjBsdXh1cnklMjB0ZXh0dXJlfGVufDB8fHx8MTc4MTYyMDQ5Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract black background with wavy lines",
+        "placement": "Hero Section Background (opacity-10 to opacity-20)"
+      },
+      {
+        "url": "https://images.pexels.com/photos/21926654/pexels-photo-21926654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Crumpled black satin fabric",
+        "placement": "Footer or Apply Form Background (opacity-10 to opacity-20)"
+      }
+    ],
+    "lifestyle_images": [
+      {
+        "url": "https://images.unsplash.com/photo-1542181961-9590d0c79dab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBzcGVjaWFsdHklMjBjb2ZmZWUlMjBzaG9wJTIwZGFya3xlbnwwfHx8fDE3ODE3MTU2NzJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern specialty coffee shop",
+        "placement": "Who We Work With Grid - Background Image"
+      }
+    ]
+  },
+  "animation_guidelines": {
+    "scroll": "Use Lenis for smooth momentum scrolling. It makes the heavy images and masonry wall feel premium.",
+    "reveal": "Use framer-motion for staggering text reveals on scroll (initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}).",
+    "hover": "All cards should have a subtle upward shift (-translate-y-1) and an increased border glow (border-white/20) on hover."
+  },
+  "accessibility_and_testing": {
+    "contrast": "Ensure all text over images has sufficient contrast. Use text-shadow or bg-black/50 overlay gradients.",
+    "testing": "All key elements MUST use data-testid. Buttons, forms, masonry images, and case study links must be testable."
+  },
+  "instructions_to_main_agent": [
+    "Install framer-motion, lucide-react, react-fast-marquee, @radix-ui/react-dialog.",
+    "Setup the dark theme globally in Tailwind config.",
+    "Do NOT use 'Inter' or 'Space Grotesk' fonts. Import 'Cabinet Grotesk' and 'Satoshi' via Fontsource or Google Fonts (or similar equivalents like 'Outfit' and 'Manrope' if Cabinet Grotesk is unavailable).",
+    "Use the specific exact image URLs provided in the media object. Do NOT use placeholders.",
+    "The Case Study must feel like a high-stakes, real-world narrative. Put the social stats (198K views) in huge typography next to the screenshots.",
+    "Masonry layout can be achieved via CSS columns (columns-1 sm:columns-2 lg:columns-3) for simplicity and performance. Add 'break-inside-avoid' to children."
+  ]
+}
