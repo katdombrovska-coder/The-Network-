@@ -6,7 +6,7 @@ export const ProcessFlow = () => {
     <section
       id="process"
       data-testid="process-flow-timeline"
-      className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-[#070707] border-y border-white/10"
+      className="scroll-mt-24 py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-[#070707] border-y border-white/10"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">

@@ -45,7 +45,7 @@ export const ApplyForm = () => {
     <section
       id="apply"
       data-testid="apply-section"
-      className="relative py-24 md:py-32 px-6 overflow-hidden"
+      className="relative scroll-mt-24 py-24 md:py-32 px-6 overflow-hidden"
     >
       <div className="absolute inset-0 -z-10">
         <img src={TEXTURES.satin} alt="" className="w-full h-full object-cover opacity-[0.12]" />

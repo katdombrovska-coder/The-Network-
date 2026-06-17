@@ -6,7 +6,7 @@ export const ValueMetrics = () => {
     <section
       id="value"
       data-testid="value-section"
-      className="py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
+      className="scroll-mt-24 py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
     >
       <div className="mb-14 max-w-2xl">
         <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">

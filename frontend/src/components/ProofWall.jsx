@@ -5,6 +5,7 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
+  DialogDescription,
 } from "./ui/dialog";
 import { PROOF, FILTERS } from "../data/evidence";
 
@@ -84,7 +85,7 @@ export const ProofWall = () => {
     <section
       id="proof"
       data-testid="proof-section"
-      className="py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
+      className="scroll-mt-24 py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
     >
       <div className="text-center mb-12">
         <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
@@ -140,6 +141,7 @@ export const ProofWall = () => {
           {active && (
             <>
               <DialogTitle className="sr-only">{active.title}</DialogTitle>
+              <DialogDescription className="sr-only">{active.meta}</DialogDescription>
               <img
                 src={active.src}
                 alt={active.title}

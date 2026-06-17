@@ -43,7 +43,7 @@ export const CaseStudy = () => {
     <section
       id="case-study"
       data-testid="flagship-case-study"
-      className="py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
+      className="scroll-mt-24 py-24 md:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
     >
       <div className="text-center mb-16">
         <Overline>Flagship Case Study</Overline>
