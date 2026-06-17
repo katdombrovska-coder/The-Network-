@@ -12,8 +12,9 @@ export const Footer = () => {
             className="h-9 w-auto object-contain"
           />
           <p className="mt-4 text-sm text-zinc-500 leading-relaxed">
-            An Ecosystem Partnership Program. We create opportunities, access,
-            and partnerships that would not exist without us.
+            We connect real-world businesses with emerging technology — building
+            partnerships that generate visibility, adoption, and real-world
+            growth.
           </p>
         </div>
 

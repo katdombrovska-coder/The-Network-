@@ -57,11 +57,12 @@ export const ApplyForm = () => {
           Apply for Partnership
         </span>
         <h2 className="mt-4 font-heading text-3xl sm:text-5xl font-black tracking-tighter">
-          Your next strategic partnership could be one introduction away.
+          Connect your business to emerging technology.
         </h2>
         <p className="mt-4 text-zinc-400">
-          Most opportunities never happen because nobody creates them. We do.
-          Tell us about your business — applications are reviewed individually.
+          We build partnerships between real-world businesses and emerging
+          technologies that generate visibility, adoption, and growth. Tell us
+          about your business — applications are reviewed individually.
         </p>
       </div>
 
@@ -76,8 +77,8 @@ export const ApplyForm = () => {
               Application received.
             </h3>
             <p className="mt-3 text-zinc-400">
-              Thank you, {form.name.split(" ")[0]}. If there’s an opportunity
-              worth creating, we’ll be in touch.
+              Thank you, {form.name.split(" ")[0]}. If there’s a partnership
+              worth building, we’ll be in touch.
             </p>
           </div>
         ) : (
