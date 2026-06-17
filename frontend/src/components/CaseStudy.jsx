@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ShieldCheck } from "lucide-react";
 import { SCREENSHOTS, PRESS } from "../data/evidence";
 
 const Overline = ({ children }) => (
@@ -126,10 +126,17 @@ export const CaseStudy = () => {
         </div>
       </div>
 
-      {/* Verifiable press row */}
+      {/* Verifiable, external-source press row */}
       <div data-testid="press-links" className="mt-20">
-        <p className="text-center text-xs font-bold tracking-[0.2em] uppercase text-zinc-500 mb-6">
-          Don’t take our word for it — read the receipts
+        <div className="flex items-center justify-center gap-2 mb-3">
+          <ShieldCheck className="w-4 h-4 text-[#facc15] shrink-0" />
+          <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#facc15]">
+            External Verification
+          </span>
+        </div>
+        <p className="text-center text-sm md:text-base text-zinc-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+          Every claim below is supported by public sources, screenshots,
+          messages, and partnership evidence.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {PRESS.map((p, i) => (
@@ -139,17 +146,29 @@ export const CaseStudy = () => {
               target="_blank"
               rel="noopener noreferrer"
               data-testid={`press-link-${i}`}
-              className="group rounded-2xl border border-white/10 bg-[#0a0a0a] p-6 hover:border-[#facc15]/50 hover:-translate-y-1 transition-all duration-300"
+              aria-label={`${p.outcome} — ${p.source} (opens in a new tab)`}
+              className="group flex flex-col rounded-2xl border border-white/10 bg-[#0a0a0a] p-6 hover:border-[#facc15]/60 hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#facc15]">
-                  {p.source}
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <span className="inline-block rounded-full border border-[#facc15]/30 bg-[#facc15]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#facc15]">
+                    {p.outcome}
+                  </span>
+                  <p className="mt-3 text-sm font-semibold text-white">
+                    {p.source}
+                  </p>
+                </div>
+                <span className="grid place-items-center w-9 h-9 rounded-full border border-white/15 bg-white/5 shrink-0 group-hover:bg-white group-hover:border-white transition-colors">
+                  <ExternalLink className="w-4 h-4 text-zinc-300 group-hover:text-black transition-colors" />
                 </span>
-                <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:text-white transition-colors" />
               </div>
-              <p className="mt-3 font-heading font-semibold leading-snug">
+              <p className="mt-3 font-heading font-semibold leading-snug text-zinc-300 group-hover:text-white transition-colors">
                 {p.title}
               </p>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-[#facc15]">
+                Verify source
+                <ExternalLink className="w-3 h-3" />
+              </span>
             </a>
           ))}
         </div>

@@ -51,20 +51,23 @@ export const LINKS = {
   ninetyFour: "https://ninetyfourdegrees.com/",
 };
 
-// Press placements — shown as a clickable row in the case study.
+// Press placements — shown as a clickable external-verification row in the case study.
 export const PRESS = [
   {
     source: "CoinEdition",
+    outcome: "Media Coverage",
     title: "94° Becomes Portugal’s First NFT-Based Specialty Coffee Membership",
     url: LINKS.coinEdition,
   },
   {
     source: "WalletConnect Blog",
+    outcome: "Official Partner Announcement",
     title: "How 94° Coffee Uses WalletConnect Pay to Settle Transactions",
     url: LINKS.walletConnectBlog,
   },
   {
     source: "94° Coffee",
+    outcome: "Venue Partner",
     title: "ninetyfourdegrees.com — the partner brand",
     url: LINKS.ninetyFour,
   },
