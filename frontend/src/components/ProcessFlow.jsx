@@ -14,7 +14,7 @@ export const ProcessFlow = () => {
             How It Works
           </span>
           <h2 className="mt-4 font-heading text-3xl sm:text-5xl font-black tracking-tighter">
-            How an opportunity becomes a partnership.
+            How an opportunity becomes reality.
           </h2>
         </div>
 

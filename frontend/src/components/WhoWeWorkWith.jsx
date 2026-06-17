@@ -1,5 +1,28 @@
 import { motion } from "framer-motion";
-import { AUDIENCE, TEXTURES } from "../data/evidence";
+import { AUDIENCE_BUSINESSES, AUDIENCE_ECOSYSTEMS, TEXTURES } from "../data/evidence";
+
+const Group = ({ label, items, offset = 0 }) => (
+  <div>
+    <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#ed0584] mb-4">
+      {label}
+    </p>
+    <div className="flex flex-wrap gap-3">
+      {items.map((a, i) => (
+        <motion.span
+          key={a}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: (offset + i) * 0.03 }}
+          data-testid={`audience-${offset + i}`}
+          className="rounded-full border border-white/15 bg-white/[0.03] px-4 py-2 text-sm font-medium text-zinc-300 hover:border-[#ed0584]/50 hover:text-white transition-colors"
+        >
+          {a}
+        </motion.span>
+      ))}
+    </div>
+  </div>
+);
 
 export const WhoWeWorkWith = () => {
   return (
@@ -34,31 +57,30 @@ export const WhoWeWorkWith = () => {
           </div>
         </motion.div>
 
-        {/* Audience list */}
+        {/* Audience groups */}
         <div>
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#ed0584]">
             Who We Work With
           </span>
           <h2 className="mt-4 font-heading text-3xl sm:text-4xl font-black tracking-tighter">
-            If you want access you can’t reach alone — we build the bridge.
+            Become part of something bigger.
           </h2>
-          <div className="mt-8 flex flex-wrap gap-3">
-            {AUDIENCE.map((a, i) => (
-              <motion.span
-                key={a}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.03 }}
-                data-testid={`audience-${i}`}
-                className="rounded-full border border-white/15 bg-white/[0.03] px-4 py-2 text-sm font-medium text-zinc-300 hover:border-[#ed0584]/50 hover:text-white transition-colors"
-              >
-                {a}
-              </motion.span>
-            ))}
+          <p className="mt-4 text-zinc-400 leading-relaxed">
+            We help businesses gain access to communities, technology partners,
+            media exposure, events, and opportunities that normally stay out of
+            reach.
+          </p>
+          <div className="mt-8 space-y-8">
+            <Group label="Businesses" items={AUDIENCE_BUSINESSES} offset={0} />
+            <Group
+              label="Ecosystems"
+              items={AUDIENCE_ECOSYSTEMS}
+              offset={AUDIENCE_BUSINESSES.length}
+            />
           </div>
         </div>
       </div>
     </section>
   );
 };
+

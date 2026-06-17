@@ -285,42 +285,45 @@ export const VALUE = [
 export const PROCESS = [
   {
     n: "01",
-    t: "Identify Opportunity",
-    d: "We spot the right moment, the right window, and the right counterpart inside a high-growth ecosystem.",
+    t: "Find the Right Match",
+    d: "We identify businesses and technologies that can create meaningful value for each other.",
   },
   {
     n: "02",
-    t: "Strategic Introduction",
-    d: "We make the introduction that wouldn’t happen on its own — directly to decision-makers.",
+    t: "Make the Introduction",
+    d: "We connect decision-makers who would likely never meet otherwise.",
   },
   {
     n: "03",
-    t: "Partnership Development",
-    d: "We shape the collaboration into something real: terms, scope, and a launch both sides want.",
+    t: "Create the Opportunity",
+    d: "We shape the collaboration into something both sides want to launch.",
   },
   {
     n: "04",
-    t: "Community Activation",
-    d: "We turn the partnership into momentum — events, communities, and on-the-ground presence.",
+    t: "Activate the Ecosystem",
+    d: "Communities, founders, media, conferences, and customers become aware of the partnership.",
   },
   {
     n: "05",
-    t: "Visibility & Exposure",
-    d: "We amplify it across media networks and ecosystem channels until the market notices.",
+    t: "Generate Visibility",
+    d: "The collaboration gains exposure through media, events, communities, and ecosystem channels.",
   },
   {
     n: "06",
-    t: "Long-Term Ecosystem Value",
-    d: "We position you permanently inside the ecosystem — so the next opportunity finds you.",
+    t: "Create Long-Term Value",
+    d: "The partnership continues generating opportunities long after launch.",
   },
 ];
 
-export const AUDIENCE = [
+export const AUDIENCE_BUSINESSES = [
   "Cafés & Restaurants",
   "Hotels & Hospitality",
   "Coworking Spaces",
   "Event Venues",
   "Lifestyle Brands",
+];
+
+export const AUDIENCE_ECOSYSTEMS = [
   "Startups",
   "AI Companies",
   "Web3 Protocols",
