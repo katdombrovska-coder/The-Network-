@@ -46,11 +46,10 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.25 }}
-        className="mt-7 max-w-xl text-base lg:text-lg text-zinc-400 leading-relaxed font-medium"
+        className="mt-7 max-w-4xl text-base lg:text-lg text-zinc-400 leading-relaxed font-medium"
       >
         We create partnerships between businesses and emerging technologies
-        <br className="hidden sm:block" /> that generate visibility, adoption,
-        and real-world growth.
+        <br /> that generate visibility, adoption, and real-world growth.
       </motion.p>
 
       <motion.div
