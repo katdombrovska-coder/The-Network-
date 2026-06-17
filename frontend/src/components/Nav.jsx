@@ -29,10 +29,13 @@ export const Nav = () => {
         <a
           href="#top"
           data-testid="nav-logo"
-          className="flex items-center gap-2 font-heading font-black text-lg tracking-tight"
+          className="flex items-center"
         >
-          <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#facc15]" />
-          THE&nbsp;NETWORK<span className="text-[#facc15]">.</span>
+          <img
+            src="/web4city-logo.png"
+            alt="WEB4CITY"
+            className="h-7 md:h-8 w-auto object-contain"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-9">
