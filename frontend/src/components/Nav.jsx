@@ -29,14 +29,14 @@ export const Nav = () => {
         <a
           href="#top"
           data-testid="nav-logo"
-          className="flex items-center gap-2"
+          className="flex items-center gap-1"
         >
           <img
             src="/web4city-logo.png"
             alt="WEB4CITY"
             className="h-7 md:h-8 w-auto object-contain"
           />
-          <span className="font-heading text-lg md:text-xl text-[#e8dcc8] leading-none">
+          <span className="font-heading text-2xl md:text-3xl text-[#e8dcc8] leading-none">
             Agency
           </span>
         </a>

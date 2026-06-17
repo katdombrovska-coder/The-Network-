@@ -6,13 +6,13 @@ export const Footer = () => {
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         <div className="max-w-sm">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <img
               src="/web4city-logo.png"
               alt="WEB4CITY"
               className="h-9 w-auto object-contain"
             />
-            <span className="font-heading text-xl text-[#e8dcc8] leading-none">
+            <span className="font-heading text-3xl text-[#e8dcc8] leading-none">
               Agency
             </span>
           </div>
