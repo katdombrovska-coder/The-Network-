@@ -12,6 +12,10 @@ export const SCREENSHOTS = {
     "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/irrj8cep_photo_2026-06-17%2017.05.43.jpeg",
   solana:
     "https://customer-assets.emergentagent.com/job_e309223b-9dfa-4113-ac3d-43e9c3945f23/artifacts/h3ds6oth_photo_2026-06-17%2017.05.47.jpeg",
+  ceoVisit:
+    "https://customer-assets.emergentagent.com/job_opportunity-engine-24/artifacts/qir4azfp_photo_2026-06-17%2019.20.42.jpeg",
+  ceoFirstStore:
+    "https://customer-assets.emergentagent.com/job_opportunity-engine-24/artifacts/7czmukmd_photo_2026-06-17%2019.21.03.jpeg",
 };
 
 export const TEXTURES = {
@@ -37,6 +41,7 @@ export const PARTNERS = [
 export const FILTERS = [
   "All",
   "Broadcast",
+  "Founder Access",
   "Screenshot",
   "Press",
   "On-Chain",
@@ -94,6 +99,26 @@ export const PROOF = [
     meta: "Schwab Network · X · Jan 13, 2026",
     url: LINKS.schwabNYSE,
     sourceLabel: "Watch on Schwab Network",
+  },
+  {
+    id: "p10",
+    type: "image",
+    category: "Founder Access",
+    src: SCREENSHOTS.ceoVisit,
+    title: "WalletConnect’s CEO bought coffee at 94° with WalletConnect Pay.",
+    meta: "Jess Houlgrave · CEO, WalletConnect · X · 6.5K views · 46 likes",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "Read the WalletConnect story",
+  },
+  {
+    id: "p11",
+    type: "image",
+    category: "Founder Access",
+    src: SCREENSHOTS.ceoFirstStore,
+    title: "“WalletConnect Pay is live in its first store at 94° — and it’s one of my favourite spots.”",
+    meta: "Jess Houlgrave · CEO, WalletConnect · X · Jan 18",
+    url: LINKS.walletConnectBlog,
+    sourceLabel: "Read the WalletConnect story",
   },
   {
     id: "p1",
