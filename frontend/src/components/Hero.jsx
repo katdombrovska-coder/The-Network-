@@ -37,8 +37,8 @@ export const Hero = () => {
         className="font-heading font-black tracking-tighter leading-[1.25] text-3xl sm:text-4xl lg:text-5xl max-w-4xl text-balance"
       >
         We Connect Real-World Businesses
-        <span className="block bg-gradient-to-r from-white via-white to-zinc-500 bg-clip-text text-transparent">
-          With Emerging Technology.
+        <span className="block text-[#ed0584]">
+          With Emerging Technology
         </span>
       </motion.h1>
 
@@ -48,8 +48,9 @@ export const Hero = () => {
         transition={{ duration: 0.7, delay: 0.25 }}
         className="mt-7 max-w-xl text-base lg:text-lg text-zinc-400 leading-relaxed font-medium"
       >
-        We create partnerships between businesses and emerging technologies that
-        generate visibility, adoption, and real-world growth.
+        We create partnerships between businesses and emerging technologies
+        <br className="hidden sm:block" /> that generate visibility, adoption,
+        and real-world growth.
       </motion.p>
 
       <motion.div
