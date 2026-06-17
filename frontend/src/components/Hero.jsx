@@ -27,7 +27,7 @@ export const Hero = () => {
         className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-zinc-300 mb-8"
       >
         <span className="w-1.5 h-1.5 rounded-full bg-[#facc15] animate-pulse" />
-        An Ecosystem Partnership Program — by invitation
+        Real-World Innovation Partnerships
       </motion.div>
 
       <motion.h1
@@ -36,9 +36,9 @@ export const Hero = () => {
         transition={{ duration: 0.7, delay: 0.1 }}
         className="font-heading font-black tracking-tighter leading-[0.95] text-4xl sm:text-6xl lg:text-7xl max-w-5xl text-balance"
       >
-        We Create Partnerships That
+        We Connect Real-World Businesses
         <span className="block bg-gradient-to-r from-white via-white to-zinc-500 bg-clip-text text-transparent">
-          Wouldn’t Exist Without Us.
+          With Emerging Technology.
         </span>
       </motion.h1>
 
@@ -48,9 +48,10 @@ export const Hero = () => {
         transition={{ duration: 0.7, delay: 0.25 }}
         className="mt-7 max-w-2xl text-base lg:text-lg text-zinc-400 leading-relaxed font-medium"
       >
-        We connect businesses, brands, communities, conferences, and technology
-        ecosystems to create opportunities, visibility, growth, and long-term
-        strategic value — access you would not reach on your own.
+        From cafés and hotels to restaurants and professional services, we
+        create strategic partnerships that help businesses access new customers,
+        media exposure, and innovation — while giving technology companies a
+        real-world environment to launch, test, and scale their solutions.
       </motion.p>
 
       <motion.div
