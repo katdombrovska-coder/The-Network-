@@ -162,7 +162,7 @@ export const CaseStudy = () => {
                   <ExternalLink className="w-4 h-4 text-zinc-300 group-hover:text-black transition-colors" />
                 </span>
               </div>
-              <p className="mt-3 font-heading font-semibold leading-snug text-zinc-300 group-hover:text-white transition-colors">
+              <p className="mt-3 font-heading font-semibold leading-snug text-zinc-300 group-hover:text-white transition-colors break-words [overflow-wrap:anywhere]">
                 {p.title}
               </p>
               <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-[#ed0584]">

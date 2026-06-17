@@ -110,7 +110,7 @@ export const PRESS = [
   {
     source: "94° Coffee",
     outcome: "Venue Partner",
-    title: "ninetyfourdegrees.com — the partner brand",
+    title: "ninetyfourdegrees.com — the venue partner",
     url: LINKS.ninetyFour,
   },
 ];
